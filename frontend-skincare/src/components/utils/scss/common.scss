@@ -106,7 +106,8 @@ input {
 }
 
 .page-content {
-  margin-top: 136px;
+  min-height: 100vh;
+  // margin-top: 136px;
   @media only screen and (max-width : 590px){
     margin-top: 240px;
   }

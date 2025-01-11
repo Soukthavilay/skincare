@@ -34,7 +34,7 @@ const Page = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500); 
+    }, 500); 
   }, []);
   
   if (isLoading) {
@@ -43,7 +43,7 @@ const Page = () => {
   return (
     <Router>
       <Switch>
-        <Route path="/admin" component={isAdmin ? Admin : Notfound} />
+        <Route path="/admin*" component={isAdmin ? Admin : Notfound} />
         <Route path="/login" component={Login} />
         <Route path="/sign-in" component={LoginForm} />
         <Route path="/register" component={Register} />

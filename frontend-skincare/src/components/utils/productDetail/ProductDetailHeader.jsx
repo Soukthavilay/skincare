@@ -49,6 +49,14 @@ function ProductDetailHeader( detailProduct ) {
   const handleChange = () => {
 
   }
+
+  useEffect(()=> {
+    setDataSize(product?.colors[0]?.sizes[0]);
+    setSelectedColor(product?.colors[0]);
+    setSelectedSizes(product?.colors[0]?.sizes);
+  },[product]);
+
+  
   useEffect(()=>{
     if (feedback && feedback.length){
       var total = 0;

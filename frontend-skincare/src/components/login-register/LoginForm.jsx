@@ -45,10 +45,10 @@ function LoginForm() {
       localStorage.removeItem("accessToken");
       localStorage.setItem("accessToken", token);
 
-      if (isAdmin == false && token) {
+      if (response.data.user.role === 0) {
         window.location.href = "/";
       } else {
-        window.location.href = "admin/createProduct";
+        window.location.href = "admin/statistical";
       }
     } catch (error) {
       toast.error(error.response.data.msg); // Display error message in ToastContainer
@@ -63,7 +63,7 @@ function LoginForm() {
     name: "",
     email: "",
     password: "",
-    phone: 0,
+    phone: "",
   });
   const handleRegisterChange = (e) => {
     const { name, value } = e.target;
@@ -83,8 +83,8 @@ function LoginForm() {
       localStorage.setItem("accessToken", token);
       setRegisterSuccess(true);
 
-      if (isAdmin) {
-        window.location.href = "/Admin";
+      if (response.data.newUser.role === 1) {
+        window.location.href = "/admin/statistical";
       } else {
         window.location.href = "/";
       }
@@ -132,7 +132,7 @@ function LoginForm() {
               value={registerFormData.password}
             />
             <input
-              type="text"
+              type="number"
               name="phone"
               placeholder={t('label-phone-number')}
               onChange={handleRegisterChange}

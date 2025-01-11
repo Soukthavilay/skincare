@@ -38,7 +38,7 @@ const userCtrl = {
         sameSite: 'none',
         secure: true,
       });
-      res.json({ accesstoken });
+      res.json({ accesstoken, newUser });
     } catch (err) {
       console.log(err.message);
       return res.status(500).json({ msg: err.message });
@@ -66,7 +66,7 @@ const userCtrl = {
         secure: true,
       });
 
-      res.json({ accesstoken });
+      res.json({ accesstoken, user });
     } catch (err) {
       return res.status(500).json({ msg: err.message });
     }

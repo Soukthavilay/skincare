@@ -199,7 +199,7 @@ function ProductList() {
         <ServiceList />
         <div className="product-list-content">
           <SideBar />
-          {loading === true ? 
+          {loading ? 
             <Loading />
           : 
             <>

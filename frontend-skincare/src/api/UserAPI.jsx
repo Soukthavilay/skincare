@@ -62,7 +62,7 @@ function UserAPI(token){
         if(check){
             const updatedColor = { ...selectedColor, sizes: dataSize };
             setCart([...cart, {...product, quantity:count, colors: updatedColor, price:updatedColor.sizes.price}]);
-            await axios.patch('http://localhost:5000/user/addcart',{cart:[...cart, {...product, quantity: count, colors: updatedColor,price:updatedColor.sizes.price}]},{
+            await axios.patch('http://localhost:5000/user/addcart',{cart:[...cart, {...product, quantity: count, colors: updatedColor,price:updatedColor.sizes.price|| product.price}]},{
                 headers:{
                     Authorization: token
                 }
