@@ -1,0 +1,17 @@
+node_modules
+/yarn.lock
+yarn.lock
+*.lock
+/*.lock
+*.env
+/*.env
+.env
+/.env
+.env
+.env
+E:/Hang/backend/PBLFinal/API-Global/.env
+E:/Hang/backend/PBLFinal/API-Global/Procfile
+E:/Hang/backend/PBLFinal/API-Global/Dockerfile
+E:/Hang/backend/PBLFinal/API-Global/Procfile
+.package-lock.json
+docker-compose.yml

@@ -1,0 +1,193 @@
+{
+    "account": "ບັນຊີຂອງຂ້ອຍ",
+    "labe-signIn": "ເຂົ້າສູ່ລະບົບ",
+    "labe-signUp": "ລົງທະບຽນ",
+    "labe-find-product": "ຄົ້ນຫາສິນຄ້າ",
+    "labe-intro": "ບໍລິສັດ Lao Fashion",
+    "label-category-women": "ຍິງ",
+    "label-category-men": "ຊາຍ",
+    "label-category-sport": "ກິລາ",
+    "label-new-product": "ສິນຄ້າໃຫມ່",
+    "label-best-sellers": "ສິນຄ້າຂາຍດີ",
+    "label-company-intro": "ກ່ຽວກັບບໍລິສັດ",
+    "label-your-email": "ອີເມວຂອງທ່ານ",
+    "label-sign-me-up": "ລົງທະບຽນສ່ວນຂອງຂ້ອຍ",
+    "label-user-info": "ຂໍ້ມູນຜູ້ໃຊ້",
+    "label-name": "ຊື່",
+    "label-email": "ອີເມວ",
+    "label-color": "ສີ",
+    "label-size": "ຂະຫນາດ",
+    "label-password": "ລະຫັດຜ່ານ",
+    "label-phone-number": "ເບີໂທລະສັບ",
+    "label-update": "ປັບປຸງ",
+    "label-change-password": "ລະຫັດຜ່ານ",
+    "label-notifications": "ການແຈ້ງເຕືອນ",
+    "label-user-info-updated": "ຂໍ້ມູນຜູ້ໃຊ້ຖືກປັບປຸງສົມບັດ!",
+    "label-close": "ປິດ",
+    "label-loading": "ກຳລັງໂຫຼດ",
+    "label-my-orders": "ການສັ່ງຊື້ຂອງຂ້ອຍ",
+    "label-hello": "ສະບາຍດີ",
+    "label-enter-personal-info": "ໃສ່ຂໍ້ມູນສ່ວນຕົວຂອງທ່ານແລະເລີ່ມຕົ້ນກັບພວກເຮົາ",
+    "label-create-account": "ສ້າງບັນຊີ",
+    "label-welcome-back": "ຍິນດີຕອນຮັບກັບຄືນ!",
+    "label-home": "ຫນ້າຫລັກ",
+    "label-user": "ຜູ້ໃຊ້",
+    "label-products": "ສິນຄ້າ",
+    "label-categories": "ໝວດ",
+    "label-orders": "ການສັ່ງຊື້",
+    "label-stats": "ສະຖິຕິ",
+    "label-learn-more": "ຂໍ້ມູນເພີ່ມເຕີມ",
+    "label-exclusive-offers": "ຮ່ວມພັດທະນາທີ່ຈະເປັນສ່ວນຫນື່ງຂອງພວກເຮົາ!",
+    "label-latest": "ຮັບຮວບ",
+    "label-oldest": "ຮັບສຸ່ງ",
+    "label-avatar": "ຮູບໂປຣໄຟລ",
+    "label-create-product": "ສ້າງສິນຄ້າ",
+    "label-item": "ລາຍການ",
+    "label-status": "ສະຖານະ",
+    "label-sell": "ຂາຍ",
+    "label-inventory": "ຄັງສິນຄ້າ",
+    "label-price": "ລາຄາ",
+    "label-upload-image": "ອັບໂຫຼດຮູບ",
+    "label-buy-now": "ຊື້​ດຽວ​ນີ້",
+    "label-buy-receive-it": "ຊື້​ດຽວ​ນີ້​ແລະ​ໄດ້​ຮັບ​ມັນ​!",
+    "label-review-product": "ການຣີວິວຜະລິດຕະພັນ",
+    "label-review-product-score": "ຄະແນນສະເລ່ຍ",
+    "label-review": "ຣີວິວ",
+    "label-not-review": "ຍັງບໍ່ໄດ້ຮັບການຣີວິວ",
+    "label-specifications": "ຂໍ້ມູນຈໍາເພາະ",
+    "label-rel-products": "ຜະລິດຕະພັນທີ່ກ່ຽວຂ້ອງ",
+    "label-sold": "ຂາຍແລ້ວ",
+    "label-in-stock": "ໃນຄັງ",
+    "label-out-of-stock": "ໝົດ",
+    "label-cart-info": "ຂໍ້ມູນກະຕ່າຊື້ເຄື່ອງ",
+    "label-check-your-cart": "ກວດເບິ່ງຜະລິດຕະພັນຢູ່ໃນກະຕ່າຂອງທ່ານ",
+    "label-delete": "ລົບ",
+    "label-total": "ທັງໝົດ",
+    "label-continues-product": "ສືບຕໍ່ຊື້ຜະລິດຕະພັນ",
+    "label-continues": "ຕໍ່ໄປ",
+    "label-not-have-pd": "ບໍ່ໄດ້ເລືອກຜະລິດຕະພັນ",
+    "label-shipping-info": "ຂໍ້ມູນການຂົນສົ່ງ",
+    "label-name-and-last-name": "ຊື່​ແລະ​ນາມ​ສະ​ກຸນ",
+    "label-address": "ທີ່ຢູ່",
+    "label-payment-method": "ວິທີການຈ່າຍເງິນ",
+    "label-back": "ກັບຄືນ",
+    "label-order-has-created": "ໄດ້​ຮັບ​ຄໍາ​ສັ່ງ​ອໍເດີສຳເລັດແລ້ວ",
+    "label-order-has-shipping": "ເວລາສົ່ງແມ່ນປະມານ 4-5 ມື້",
+    "label-order-thank-you": "ຂອບໃຈທີ່ໄວ້ວາງໃຈໃນຮ້ານຂອງພວກເຮົາ!",
+    "label-profile-require-name": "ກະລຸນາໃສ່ຊື່ຂອງທ່ານ!",
+    "label-profile-require-email": "ກະລຸນາໃສ່ອີເມວຂອງທ່ານ!",
+    "label-profile-require-phone": "ກະລຸນາໃສ່ເບີໂທລະສັບຂອງເຈົ້າ!",
+    "label-edit-password": "ແກ້ໄຂລະຫັດຜ່ານຂອງທ່ານ",
+    "label-cancel": "ຍົກເລີກ",
+    "label-order-pending": "ຖ້າຢືນຢັນ",
+    "label-order-confirmed": "ຢືນຢັນແລ້ວ",
+    "label-order-shipping": "ການສົ່ງສົ່ງກັນ",
+    "label-order-paid": "ຈ່າຍແລ້ວ",
+    "label-order-cancelled": "ຍົກເລີກແລ້ວ",
+    "label-cancel-requested": "ຂໍເບີກການຍົກເລີກ",
+    "label-order-delivered": "ສົ່ງອໍເດີແລ້ວ",
+    "label-expensive-price": "ລາຄາປາຍທາງ",
+    "label-cheap-price": "ລາຄາສູງສຸດ",
+    "label-write-your-cancel-request": "ປ້ອນຂໍ້ມູນຂໍ້ມູນຂອງທ່ານ",
+    "label-send-request": "ສົ່ງຄຳຖາມ",
+    "label-submit-a-review": "ສົ່ງການວິວາຕາ",
+    "label-upload-files": "ອັບໂຫຼດໄຟລ",
+    "label-write-a-product-review": "ປ້ອນການວິວາຕາຜະລິດຕະພັນ",
+    "label-user-data-is-missing": "ຂໍ້ມູນຜູ້ໃຊ້ຢູ່ອີກ",
+    "label-order-details": "ລາຍລະອຽດອໍເດີ",
+    "label-qty": "ຈຳນວນ",
+    "label-placed-on": "ສັ່ງເມື່ອ",
+    "label-ship-with": "ຮູບແບບສັ່ງ",
+    "label-total-summary": "ລວມທັງຫມົດ",
+    "label-subtotal": "ລວມ",
+    "label-shipping-fee": "ຄ່າສົ່ງ",
+    "label-cancel-request": "ສົ່ງຄຳຂໍຍົກເລິກ",
+    "label-newest":"ໃຫມ່",
+    "label-all-orders":"ອໍເດີທັງຫມົດ",
+    "label-cancel-preparing": "ຄໍາສັ່ງກໍາລັງກະກຽມ",
+    "label-review-writing": "ຂຽນການຣີວິວຜະລິດຕະພັນ",
+    "label-review-comment": "ຂຽນການຄວາມຄິດເຫັນກ່ຽວກັບຜະລິດຕະພັນ",
+    "label-check-order": "ກວດສອບຄໍາສັ່ງ",
+    "label-check-order-detail": "ລາຍລະອຽດການຈັດສົ່ງ",
+    "label-check-order-success": "ຄໍາສັ່ງສໍາເລັດ",
+    "label-sorry": "ຂໍໂທດທີ່ຮັກ. ກະລຸນາເລືອກປະເພດອື່ນເພາະວ່າອັນນີ້ຍັງບໍ່ພ້ອມ",
+    "label-price-cheep":"ຄ່າສົ່ງ",
+    "label-cash":"ຊໍາລະຕາມການຈັດສົ່ງ",
+    "label-free":"ກ່ອງຂອງຂວັນຟຣີ",
+    "label-option1":"ຈາກ 20,000 ດົ່ງ",
+    "label-option2":"ສັ່ງດຽວນີ້, ຈ່າຍພາຍຫຼັງ",
+    "label-option3":"ຕິດຕໍ່ຖ້າຫາກວ່າທ່ານຕ້ອງການ",
+    "label-option4":"ເລືອກກ່ອງຂອງຂວັນຟຣີ",
+    "label-place-on": "ຊື້ເມື່ອ",
+    "productTitles":{
+        "ao-thun":{
+            "ao-thun-cotton":"AIRism Cotton Loose Round Neck T-Shirt"
+        },
+        "ao-polo":{
+            "ao-thun-polo-dry":"ເສື້ອຍືດ POLO ແຫ້ງ"
+        },
+        "ao-ni":{
+            "ao-ni-co-mui": "ເສື້ອຢືດ Hooded Sweatshirt",
+            "ao-park-hai-mat":"ເສື້ອຍືດ POLO ແຫ້ງ"
+        },
+        "ao-so-mi":{
+            "jersy-ngan-tay":"ເສື້ອຢືດ Jersey ແຂນສັ້ນ ບໍ່ມີທາດເຫຼັກແຫ້ງ"
+        },
+        "quan-jean":{
+            "sieu-co-gian":"ໂສ້ງຢີນຍືດ Super"
+        },
+        "quan-casual":{
+            "heatech":"ຜ້າຝ້າຍອຸ່ນ HEATTECH"
+        },
+        "quan-short":{
+            "dang-slim-fit":"ໂສ້ງຂາສັ້ນຍືດຍາວ"
+        },
+        "do-mac-trong":{
+            "airism-quan-lot":"AIRism Low-Rise Boxer Briefs"
+        },
+        "do-mac-ngoai":{
+            "ao-park-hai-mat":"Parka ສອງດ້ານ"
+        }
+    },
+    "description":{
+        "ao-thun":{
+            "ao-thun-cotton": "ຜ້າ 'AIRism' ອ່ອນໆ. ການອອກແບບວ່າງຄົນອັບເດດ"
+        },
+        "ao-polo":{
+            "ao-thun-polo-dry":"ໂຄງສ້າງກ້ຽງໃຫ້ຄວາມຮູ້ສຶກສົດຊື່ນ. ຄໍເບິ່ງດີມີປຸ່ມຂຶ້ນ ຫຼື unfastened."
+        },
+        "ao-ni":{
+            "ao-ni-co-mui":"ການອອກແບບສອງດ້ານ. ຜ້າແພແມ່ນອ່ອນແລະສະດວກສະບາຍດ້ວຍຊັ້ນນອກທີ່ກັນນ້ໍາ.",
+            "ao-park-hai-mat":"ໂຄງສ້າງກ້ຽງໃຫ້ຄວາມຮູ້ສຶກສົດຊື່ນ. ຄໍເບິ່ງດີມີປຸ່ມຂຶ້ນ ຫຼື unfastened."
+        },
+        "ao-so-mi":{
+            "jersy-ngan-tay": "ອ່ອນ, ມີຄວາມຮູ້ສຶກສະດວກສະບາຍແລະຮູບລັກສະນະ elegant. ດ້ວຍເທກໂນໂລຍີ DRY, ມັນນໍາເອົາຄວາມຮູ້ສຶກທີ່ສະດວກສະບາຍແລະເຢັນ."
+        },
+        "quan-jean":{
+            "sieu-co-gian":"ຍືດໄດ້ຢ່າງບໍ່ຫນ້າເຊື່ອສໍາລັບການສະດວກສະບາຍ, ເຫມາະ snug. ປຸ່ມ tonal ຟຸ່ມເຟືອຍແລະ stitching ສະຫນອງລັກສະນະທີ່ຊັບຊ້ອນ."
+        },
+        "quan-casual":{
+            "heatech":"ປັບປຸງດ້ວຍປ້າຍການດູແລທີ່ພິມຢູ່ເທິງຫນ້າຜະລິດຕະພັນເພື່ອຊ່ວຍໃຫ້ທ່ານຮູ້ສຶກສະດວກສະບາຍຫຼາຍຂຶ້ນ. 1.5 ເທົ່າ* ອຸ່ນກວ່າ 'HEATTECH' ປົກກະຕິຂອງພວກເຮົາ."
+        },
+        "quan-short":{
+            "dang-slim-fit":"ຜ້າຝ້າຍ twill ມີຄວາມຍືດຫຍຸ່ນເພີ່ມຂຶ້ນເພື່ອສ້າງຄວາມຮູ້ສຶກທີ່ສະດວກສະບາຍ. ໂຄງສ້າງທີ່ສະຫງ່າງາມແລະຕັດກະທັດຮັດ."
+        },
+        "do-mac-trong":{
+            "airism-quan-lot":"AIRism 'ແມ່ນກ້ຽງສໍາລັບຄວາມຮູ້ສຶກສະດວກສະບາຍ, ອາກາດ. ການອອກແບບງາມແອວຕ່ໍາ."
+        },
+        "do-mac-ngoai":{
+            "ao-ni-co-mui": "ເນື້ອຜ້າລຽບມີເສັ້ນຕ້ານການຕິດຕົວ. hood ມີການອອກແບບ contoured stylish."
+        }
+    },
+    "categoryTitles":{
+        "67820408ec16eb49d8f3594e": "T-shirt",
+        "67820441ec16eb49d8f3595a": "Polo Shirt",
+        "67820457ec16eb49d8f3595e": "Casual Pants",
+        "6782048dec16eb49d8f35962": "Jeans",
+        "65ae68298b38bd5b6c4f22ee": "Dress Shirt",
+        "678204a8ec16eb49d8f35966": "Shorts",
+        "678204c2ec16eb49d8f3596a": "Underwear",
+        "65ae6b354b4dc368f0898b1a": "Knitwear",
+        "65ae6b404b4dc368f0898b1e": "Outerwear"
+    }
+}

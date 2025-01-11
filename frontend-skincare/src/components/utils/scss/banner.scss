@@ -1,0 +1,16 @@
+.banner{
+    width: 100%;
+    margin: auto;
+    // max-height: 440px;
+    // min-height: 440px;
+    overflow: hidden;
+    .img-slide{
+        width: 100%;
+        .wrapper{
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}

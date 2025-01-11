@@ -1,0 +1,28 @@
+.band-list{
+    max-width: 1440px;
+    margin: auto;
+    padding: 12px 0;
+    
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            float: left;
+            list-style: none;
+            a{
+                filter: grayscale(100%);
+                opacity: 0.5;
+                vertical-align: middle;
+                font-size: .75rem;
+                border-radius: 0.15rem;
+                text-decoration: none;
+                transition: all .2s ease-out;
+                img{
+                    width: 80%;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

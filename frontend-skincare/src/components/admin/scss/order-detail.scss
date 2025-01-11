@@ -1,0 +1,163 @@
+.orderDetail-admin {
+  width: 100%;
+}
+.order-title {
+  color: #3c3c3c;
+  margin: 50px 0 0 50px;
+
+  .order-number {
+    color: #28a745;
+  }
+}
+.title {
+  font-weight: 600;
+  color: #000;
+}
+.subtitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #232A3E;
+}
+.frame {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 24px;
+  margin-bottom: 32px;
+
+}
+.order-detail-admin {
+  padding: 50px;
+  width: 100%;
+  display: flex;
+  column-gap: 40px;
+
+  .order-detail-left {
+    width: 70%;
+
+    .order-item-summary {
+  
+
+      &_row {
+        display: flex;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #d4d5d9;
+
+        &:first-child {
+          font-weight: 600;
+
+          .title {
+            font-size: 18px;
+          }
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &-item {
+          width: 20%;
+          &:first-child {
+            width: 52%;
+          }
+        }
+
+        &.product {
+          padding-top: 8px;
+          align-items: center;
+          font-weight: 500;
+
+          .order-item-summary_row-item:first-child {
+            display: flex;
+            align-items: center;
+
+            img {
+              width: 48px;
+              margin-right: 8px;
+            }
+
+            h3 {
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .order-customer-info {
+  
+
+      h3 {
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #d4d5d9;
+        margin-bottom: 8px;
+      }
+
+      &_item {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #d4d5d9;
+
+        &:last-child {
+          border-bottom: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .order-detail-right {
+    .order-summary {
+      &-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #d4d5d9;
+
+        .order-status {
+          padding: 4px 8px;
+          background-color: #ef0505;
+          border-radius: 20px;
+          color: #fff;
+        }
+        .order-status-pass{
+          padding: 4px 8px;
+          background-color: green;
+          border-radius: 20px;
+          color: #fff;
+        }
+      }
+
+      &-content {
+        &_item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 8px;
+          margin-bottom: 8px;
+          border-bottom: 1px solid #d4d5d9;
+
+          &:last-child {
+            border: none;
+            margin: 0;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .order-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

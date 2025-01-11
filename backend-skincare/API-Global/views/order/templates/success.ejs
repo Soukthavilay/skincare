@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@300;400;500&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+<head>
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .item h2 {
+            color: #666;
+            margin-top: 0;
+        }
+        .item p {
+            color: #999;
+            margin-bottom: 5px;
+        }
+        .total {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            color: #666;
+        }
+        .item-image{
+            display: flex;
+            justify-content: space-around;
+        }
+        .name-customer{
+            text-transform: uppercase;
+        }
+        @media only screen and (max-width : 590px){
+            .item-image{
+                flex-direction: column;
+            }
+            .item-image > img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Order Confirmation</h1>
+    <div class="container">
+        <h1>Billing</h1>
+        <p>Thank you for your purchase, <strong class="name-customer"><%= order.name %>!</strong></p>
+        <p>Your order details:</p>
+        <% for (let i = 0; i < order.listOrderItems.length; i++) { %>
+            <div class="item">
+                <h2><%= order.listOrderItems[i].title %></h2>
+                <div class="item-image">
+                    <p>Price: <%= order.listOrderItems[i].price %></p>
+                    <p>Quantity: <%= order.listOrderItems[i].quantity %></p>
+                    <img src="<%= order.listOrderItems[i].images.url %>" width="60" alt="image-product"/>
+                </div>
+            </div>
+        <% } %>
+        <p class="total">Total: <%= order.total %></p>
+        <p>Payment Method: <%= order.paymentMethod %></p>
+        <p>Status: <%= order.status %></p>
+        <p>Email: <%= order.email %></p>
+        <p>Address: <%= order.address %></p>
+        <p>Phone: <%= order.phone %></p>
+        <p>Order Date: <%= order.createdAt %></p>
+        <p class="footer">Thank you for shopping with us!</p>
+    </div>
+</body>
+</html>

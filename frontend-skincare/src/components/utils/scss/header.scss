@@ -1,0 +1,150 @@
+header {
+  .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  max-width: 1440px;
+  margin: auto;
+  @media only screen and (max-width : 590px){
+    flex-direction: column;
+  }
+
+  .header__logo {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width : 590px){
+      order: 1;
+      align-self: flex-start;
+    }
+  }
+  .header-search{
+    @media only screen and (max-width : 590px){
+      order: 2;
+      align-self: flex-start;
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    @media only screen and (max-width : 590px){
+      order: 3;
+      align-self: flex-start;
+    }
+    .user-icon {
+      // height: 100%;
+      // width: 24px;
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    &-user {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      color: #3c3c3c;
+      font-size: 14px;
+
+      span {
+        display: block;
+
+        &:nth-child(2) {
+          display: flex;
+          align-items: center;
+        }
+
+        svg {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .header-cart {
+      position: relative;
+
+      svg {
+        font-size: 24px;
+        opacity: 0.7;
+        transform: translateY(4px);
+      }
+
+      .header-cart-count {
+        position: absolute;
+        display: block;
+        background-color: #fb2c2c;
+        padding: 4px;
+        border-radius: 50%;
+        line-height: 75%;
+        top: -2px;
+        right: -4px;
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+
+    a {
+      color: #3c3c3c;
+      label{
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+
+  a {
+    .result-item {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+
+      p {
+        font-size: 12px;
+        word-break: break-all;
+        width: 139px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      img {
+        object-fit: contain;
+        width: 23%;
+      }
+    }
+  }
+}
+}
+
+.search-results>a {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.search-results a:hover {
+  background-color: #f0f0f0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFF;
+  z-index: 10;
+}

@@ -1,0 +1,134 @@
+.categories-item{
+    max-width: 1440px;
+    margin: auto;
+    .banners-double{
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex;
+        column-gap: 24px;
+        .banner_fam{
+            margin-bottom: 0 !important;
+            width: calc(50% - 10px);
+            float: left;
+            cursor: pointer;
+            .view{
+                position: relative;
+                // float: left;
+                overflow: hidden;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                img{
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                }
+                .block_gris{
+                    display: none;
+                    color: #FFFFFF;
+                    float: left;
+                    // height: 55px;
+                    // margin-top: -55px;
+                    opacity: 0;
+                    width: 100%;
+                    transition: .4s;
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 10;
+                    background-color: #000;
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+                .topbannerh{
+                    width: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(0%, -50%);
+                    margin-top: 0;
+                    height: auto;
+                    h2.nom_banner_h{
+                        color: #000;
+                        padding-right: 10px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        text-align: left;
+                        @media only screen and (max-width : 590px){
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .banners-triple{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 24px;
+        .banner_fam{
+            width: 100%;
+            float: left;
+            cursor: pointer;
+            .view{
+                // float: left;
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                text-align: center;
+                cursor: pointer;
+                img{
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                }
+                .block_gris{
+                    display: none;
+                    color: #FFFFFF;
+                    float: left;
+                    // height: 55px;
+                    // margin-top: -55px;
+                    opacity: 0;
+                    width: 100%;
+                    transition: .4s;
+
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 10;
+                    background-color: #000;
+                    &:hover {
+                        opacity: 0.5;
+                    }
+                }
+                .topbannerh{
+                    width: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(0%, -50%);
+                    margin-top: 0;
+                    height: auto;
+                    float: left;
+                    h2.nom_banner_h{
+                        color: #000;
+                        padding-right: 10px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        text-align: center;
+                        @media only screen and (max-width : 590px){
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

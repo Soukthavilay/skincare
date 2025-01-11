@@ -1,0 +1,194 @@
+{
+    "account": "Tài khoản của tôi",
+    "labe-signIn": "Đăng Nhập",
+    "labe-signUp": "Đăng Ký",
+    "labe-find-product": "Tìm kiếm sản phẩm",
+    "labe-intro": "skincare",
+    "label-category-women": "Phụ Nữ",
+    "label-category-men": "Nam",
+    "label-category-sport": "Đồ thể thao",
+    "label-new-product": "sản phẩm mới",
+    "label-best-sellers": "sản phẩm bán chạy",
+    "label-company-intro": "GIỚI THIỆU LAO TECH",
+    "label-your-email": "email của bạn",
+    "label-sign-me-up": "đăng ký cho tôi",
+    "label-user-info": "Thông tin người dùng",
+    "label-name": "Tên",
+    "label-email": "Email",
+    "label-password": "mật khẩu",
+    "label-phone-number": "số điện thoại",
+    "label-update": "cập nhật",
+    "label-change-password": "sửa mật khẩu",
+    "label-notifications": "Thông báo",
+    "label-user-info-updated": "Thông tin người dùng được cập nhật thành công!",
+    "label-close": "đóng",
+    "label-loading": "đang tải",
+    "label-my-orders": "đơn hàng của tôi",
+    "label-hello": "Chào bạn",
+    "label-enter-personal-info": "Nhập thông tin cá nhân của bạn và bắt đầu cuộc hành trình với chúng tôi",
+    "label-create-account": "tạo tài khoản",
+    "label-welcome-back": "Chào mừng trở lại!",
+    "label-home": "trang chủ",
+    "label-user": "người dùng",
+    "label-products": "sản phẩm",
+    "label-categories": "danh mục",
+    "label-orders": "đơn hàng",
+    "label-stats": "thống kê",
+    "label-learn-more": "TÌM HIỂU TRƯỚC MỌI NGƯỜI",
+    "label-exclusive-offers": "Nhận các ưu đãi và tin tức độc quyền sẽ làm bừng sáng ngày của bạn!",
+    "label-latest": "mới nhất",
+    "label-oldest": "lâu nhất",
+    "label-avatar": "hình đại diện",
+    "label-create-product": "tạo sản phẩm",
+    "label-item": "mục",
+    "label-status": "trạng thái",
+    "label-sell": "bán",
+    "label-inventory": "kho",
+    "label-price": "giá",
+    "label-upload-image": "tải hình lên",
+    "label-color": "Màu",
+    "label-size": "Kích thước",
+    "label-in-stock": "còn trong kho",
+    "label-out-of-stock": "hết trong kho",
+    "label-add-to-cart": "thêm vào giỏ hàng",
+    "label-buy-now": "Mua ngay",
+    "label-buy-receive-it": "Mua ngay và nhận nó!",
+    "label-review-product": "Đánh giá sản phẩm",
+    "label-review-product-score": "Đánh giá trung bình",
+    "label-review": "Đánh giá",
+    "label-not-review": "Chưa có đánh giá sản phẩm này",
+    "label-specifications": "Mô tả",
+    "label-rel-products": "NHỮNG SẢM PHẨM TƯƠNG TỰ",
+    "label-sold": "đã bán",
+    "label-cart-info": "Thông tin giỏ hàng",
+    "label-check-your-cart": "Kiểm tra sản phẩm trong giỏ hàng của bạn",
+    "label-delete": "Xóa",
+    "label-total": "Tất cả",
+    "label-continues-product": "Tiếp tục mua sản phẩm",
+    "label-continues": "Tiếp theo",
+    "label-not-have-pd": "Chưa chọn được sản phẩm",
+    "label-shipping-info": "Thông tin vận chuyển",
+    "label-name-and-last-name": "Họ và tên",
+    "label-address": "Địa chỉ",
+    "label-payment-method": "Phương thức trả tiền",
+    "label-back": "Quay lại",
+    "label-order-has-created": "Đơn hàng đã được nhận",
+    "label-order-has-shipping": "Thời gian giao hàng khoảng 4-5 ngày",
+    "label-order-thank-you": "Cảm ơn bạn đã tin tưởng mua hàng của chúng tôi!!",
+    "label-profile-require-name": "Xin hãy nhập tên của bạn.!",
+    "label-profile-require-email": "Vui lòng nhập email của bạn.!",
+    "label-profile-require-phone": "Xin vui lòng điền số điện thoại của bạn.!",
+    "label-edit-password": "Sửa mật khẩu của bạn",
+    "label-cancel": "Hủy",
+    "label-order-pending": "Chờ xác nhận",
+    "label-order-confirmed": "Đã xác nhận",
+    "label-order-shipping": "Đang vận chuyển",
+    "label-order-paid": "Đã thanh toán",
+    "label-order-cancelled": "Đã hủy",
+    "label-cancel-requested": "Yêu cầu hủy",
+    "label-order-delivered": "Đã giao hàng",
+    "label-expensive-price": "Giá cao",
+    "label-cheap-price": "Giá rẻ",
+    "label-write-your-cancel-request": "Viết yêu cầu hủy của bạn",
+    "label-send-request": "Gửi yêu cầu",
+    "label-submit-a-review": "Gửi đánh giá",
+    "label-upload-files": "Tải tệp lên",
+    "label-write-a-product-review": "Viết đánh giá sản phẩm",
+    "label-user-data-is-missing": "Dữ liệu người dùng đang thiếu",
+    "label-order-details": "Chi tiết đơn hàng",
+    "label-qty": "Số lượng",
+    "label-placed-on": "Đặt vào",
+    "label-ship-with": "Vận chuyển với",
+    "label-total-summary": "Tổng cộng",
+    "label-subtotal": "Tổng phụ",
+    "label-shipping-fee": "Phí vận chuyển",
+    "label-cancel-request": "Yêu cầu hủy",
+    "label-newest":"Mới nhất",
+    "label-all-orders":"Tất cả đơn hàng",
+    "label-cancel-preparing": "đơn hàng đang chuẩn bị",
+    "label-review-writing": "Viết đánh giá sản phẩm",
+    "label-review-comment": "Viết bình luận về sản phẩm",
+    "label-check-order": "Kiểm tra đơn hàng",
+    "label-check-order-detail": "Chi tiết đơn hàng",
+    "label-check-order-success": "Kiểm tra thành công",
+    "label-sorry": "Xin lỗi bạn yêu. Vui lòng chọn danh mục khác vì danh mục này chưa sẵn sàng",
+    "label-price-cheep":"Giao hàng chi phí thấp",
+    "label-cash":"Thanh toán khi giao hàng",
+    "label-free":"Hộp quà tặng miễn phí",
+    "label-option1":"Từ 20.000 đồng",
+    "label-option2":"Đặt hàng trước trả tiền sau",
+    "label-option3":"Liên hệ nếu bạn muốn",
+    "label-option4":"Chọn hộp quà miễn phí",
+    "label-place-on":"Mua lúc",
+    "productTitles":{
+        "ao-thun":{
+            "ao-thun-cotton":"AIRism Cotton Áo Thun Cổ Tròn Dáng Rộng"
+        },
+        "ao-polo":{
+            "ao-thun-polo-dry":"ÁO THUN POLO DRY"
+        },
+        "ao-ni":{
+            "ao-ni-co-mui": "Áo Nỉ Có Mũ Chui Đầu",
+            "ao-park-hai-mat":"ÁO THUN POLO DRY"
+        },
+        "ao-so-mi":{
+            "jersy-ngan-tay":"Áo Sơ Mi Dry Không Cần Ủi Vải Jersey Ngắn Tay"
+        },
+        "quan-jean":{
+            "sieu-co-gian":"Quần Jeans Siêu Co Giãn"
+        },
+        "quan-casual":{
+            "heatech":"HEATTECH Cotton Quần Tất Giữ Ấm"
+        },
+        "quan-short":{
+            "dang-slim-fit":"Quần Shorts Co Giãn Dáng Slim Fit"
+        },
+        "do-mac-trong":{
+            "airism-quan-lot":"AIRism Quần Lót Boxer Brief Cạp Thấp"
+        },
+        "do-mac-ngoai":{
+            "ao-park-hai-mat":"Áo Parka Hai Mặt"
+        }
+    },
+    "description":{
+        "ao-thun":{
+            "ao-thun-cotton": "Chất liệu vải 'AIRism' mềm mại. Kiểu dáng rộng thời trang"
+        },
+        "ao-polo":{
+            "ao-thun-polo-dry":"Kết cấu mịn màng mang lại cảm giác tươi mát. Cổ áo trông tuyệt vời khi được cài nút hoặc cởi ra."
+        },
+        "ao-ni":{
+            "ao-ni-co-mui":"Thiết kế hai mặt. Lớp lót mềm mại và thoải mái với lớp ngoài chống bám nước.",
+            "ao-park-hai-mat":"Kết cấu mịn màng mang lại cảm giác tươi mát. Cổ áo trông tuyệt vời khi được cài nút hoặc cởi ra."
+        },
+        "ao-so-mi":{
+            "jersy-ngan-tay": "Cảm giác mềm mại, thoải mái và vẻ ngoài thanh lịch. Với công nghệ DRY mang lại cảm giác thoải mái, mát mẻ."
+        },
+        "quan-jean":{
+            "sieu-co-gian":"Độ co giãn đáng kinh ngạc cho cảm giác thoải mái, vừa vặn. Các nút và đường khâu có tông màu sang trọng mang lại vẻ ngoài tinh tế."
+        },
+        "quan-casual":{
+            "heatech":"Được cải tiến với nhãn chăm sóc được in trên bề mặt sản phẩm giúp bạn thêm phần thoải mái hơn. Ấm hơn 1,5 lần* so với 'HEATTECH' thông thường của chúng tôi."
+        },
+        "quan-short":{
+            "dang-slim-fit":"Chất liệu cotton twill có độ co giãn tăng thêm tạo cảm giác thoải mái. Kết cấu thanh lịch và đường cắt mỏng."
+        },
+        "do-mac-trong":{
+            "airism-quan-lot":"AIRism' mượt mà mang lại cảm giác thoải mái, thoáng mát. Thiết kế cạp thấp đẹp mắt."
+        },
+        "do-mac-ngoai":{
+            "ao-ni-co-mui": "Kết cấu mịn với lớp lót chống vón cục. Mũ trùm đầu có kiểu dáng đường viền đầy phong cách."
+        }
+    },
+    "categoryTitles":{
+        "67820408ec16eb49d8f3594e": "cảm giác trang điểm mới",
+        "67820441ec16eb49d8f3595a": "đối xử",
+        "67820457ec16eb49d8f3595e": "dầu gội giải độc",
+        "6782048dec16eb49d8f35962": "huyết thanh mặt",
+        "65ae68298b38bd5b6c4f22ee": "Áo Sơ Mi",
+        "678204a8ec16eb49d8f35966": "dầu mặt",
+        "678204c2ec16eb49d8f3596a": "Treatment",
+        "65ae6b354b4dc368f0898b1a": "Đồ Nỉ",
+        "65ae6b404b4dc368f0898b1e": "Đồ Mặc Ngoài"
+    }
+}

@@ -1,0 +1,143 @@
+$theme-color: #0d0d0e;
+
+.featured-product {
+  max-width: 1440px;
+  margin: 48px auto;
+
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 48px;
+    font-size: 20px;
+  }
+
+  &-slide {
+    padding: 0 45px;
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 24px;
+    }
+  }
+
+  .product-item {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &-image {
+      text-align: center;
+      flex-shrink: 0;
+      .coupon{
+        background-color: rgb(243, 136, 136);
+        position: relative;
+        top: -190px;
+        bottom: 50px;
+        border-radius: 10px;
+        // width: fit-content;
+        margin: 0 !important;
+        width: max-content;
+        padding: 5px;
+        span{
+          color: #4e4949;
+          margin-right: 5px;
+          font-size: 12px;
+        }
+      }
+
+      img {
+        width: 100%;
+        // height: 200px;
+        // object-fit: contain;
+      }
+    }
+
+    &-detail {
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      .product-name {
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+
+        a {
+          text-decoration: none;
+          color: #151515;
+          transition: .3s;
+
+          &:hover {
+            color: $theme-color;
+          }
+        }
+      }
+
+      .product-detail-meta {
+        margin-top: 14px;
+        border-top: 1px solid rgba(128, 128, 128, 0.3);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .price-both{
+          display: flex;
+          flex-direction: row-reverse;
+          align-items: center;
+        }
+        .product-price {
+          font-size: 18px;
+          line-height: 150%;
+          margin: 14px 0;
+          font-weight: 500;
+          color: $theme-color;
+        }
+        span {
+          margin-left: 8px;
+          color: #939ca3;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .product-detail {
+      margin-top: auto;
+    }
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+}
+
+.about-us {
+  max-width: 1440px;
+  margin: 24px auto;
+
+  padding: 24px 10px;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+
+  h2 {
+    margin: 0 0 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #808080;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 150%;
+    color: #808080;
+  }
+}

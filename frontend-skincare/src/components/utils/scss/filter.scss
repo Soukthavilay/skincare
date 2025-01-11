@@ -1,0 +1,100 @@
+.menu-content{
+    background-color: #0d0d0e;
+    width: 100%;
+    margin: auto;
+    // height: 45px;
+    .menuMargen{
+        display: flex;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        padding: 8px 0;
+        .Btncateg{
+            height: 100%;
+            .btnCategories{
+                text-decoration: none;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                text-transform:uppercase;
+                strong {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 8px;
+                }
+            }
+            .category-dropdown{
+                position: absolute;
+                // top: 100%;
+                left: 0;
+                z-index: 999;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                padding: 10px;
+                width: 100%;
+                max-height: 200px;
+                overflow-y: auto;
+                .option-menu{
+                    .option{
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        .Btnband{
+            height: 100%;
+            .btn-band{
+                text-decoration: none;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                text-transform:uppercase;
+            }
+            .band-dropdown{
+                position: absolute;
+                // top: 100%;
+                left: 0;
+                z-index: 999;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                padding: 10px;
+                width: 100%;
+                max-height: 200px;
+                overflow-y: auto;
+                .option-menu{
+                    .option{
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        .menu-choice{
+            height: 100%;
+            display: flex;
+            ul{
+                list-style-type: none;
+            }
+            .option-menu{
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
+                gap: 100px;
+                align-items: center;
+                .option{
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}
