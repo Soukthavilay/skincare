@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import StarRatings from 'react-star-ratings';
 import { GlobalState } from '../../../GlobalState';
 import axios from 'axios';
-import { useTranslation } from '../../../../node_modules/react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function ProductDetailHeader( detailProduct ) {
   const [count, setCount] = useState(1);

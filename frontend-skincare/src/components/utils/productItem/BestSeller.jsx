@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import axios from "axios";
 import StarRatings from "react-star-ratings";
-import { useTranslation } from '../../../../node_modules/react-i18next';
+import { useTranslation } from 'react-i18next';
 
 // import required modules
 import { Navigation } from "swiper";

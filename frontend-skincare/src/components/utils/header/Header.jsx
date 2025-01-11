@@ -6,7 +6,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { AiOutlineSearch } from "react-icons/ai";
 import { GlobalState } from "../../../GlobalState";
-import { useTranslation } from '../../../../node_modules/react-i18next';
+import { useTranslation } from 'react-i18next';
 
 import '../scss/header.scss';
 import axios from "axios";

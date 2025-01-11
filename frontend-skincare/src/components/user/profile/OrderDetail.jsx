@@ -6,7 +6,7 @@ import ProfileOption from "./ProfileOption";
 import "../../utils/scss/profile.scss";
 import Review from "../review/Review";
 import Cancel from "../review/Cancel";
-import { useTranslation } from '../../../../node_modules/react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const OrderDetail = () => {
   const state = useContext(GlobalState);

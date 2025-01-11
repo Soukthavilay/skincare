@@ -8,7 +8,7 @@ import axios from "axios";
 import Loading from "../Loading/Loading";
 import ServiceList from "./ServiceList";
 import SideBar from "./SideBar";
-import { useTranslation } from '../../../../node_modules/react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function ProductList() {
   const state = useContext(GlobalState);

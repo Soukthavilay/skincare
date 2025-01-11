@@ -3,7 +3,7 @@ import { RiTruckLine } from "react-icons/ri";
 import { BsCashStack } from "react-icons/bs";
 import { AiOutlineGift } from "react-icons/ai";
 import { RiCustomerService2Line } from "react-icons/ri";
-import { useTranslation } from '../../../../node_modules/react-i18next';
+import { useTranslation } from 'react-i18next';
 
 function ServiceList() {
   const { t } = useTranslation();

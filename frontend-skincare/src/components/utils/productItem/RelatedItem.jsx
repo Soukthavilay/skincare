@@ -14,7 +14,7 @@ import {Link} from 'react-router-dom';
 import { useEffect } from "react";
 import axios from "axios";
 import { useState } from "react";
-import { useTranslation } from '../../../../node_modules/react-i18next';
+import { useTranslation } from 'react-i18next';
 
 const RelatedItem = (categories) => {
   const state = useContext(GlobalState);

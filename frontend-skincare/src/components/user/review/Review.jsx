@@ -3,7 +3,7 @@ import { GlobalState } from "../../../GlobalState";
 import { useParams, useHistory } from 'react-router-dom';
 import React, { useContext, useEffect, useState } from "react";
 import Loading from "../../utils/Loading/Loading";
-import { useTranslation } from '../../../../node_modules/react-i18next';
+import { useTranslation } from 'react-i18next';
 
 import axios from "axios";
 const Review = (product_id) => {

@@ -3,7 +3,7 @@ import StepTracker from './StepTracker';
 import { GlobalState } from "../../../GlobalState"
 import axios from "axios"
 import { Link } from 'react-router-dom';
-import { useTranslation } from '../../../../node_modules/react-i18next';
+import { useTranslation } from 'react-i18next';
 import { FcEmptyTrash } from "react-icons/fc";
 
 function OrderSummary() {
