@@ -12,9 +12,9 @@ function ShippingDetail() {
   const [userDetail] = state.userAPI.detail;
   const [cart, setCart] = state.userAPI.cart;
   const id = userDetail._id;
-  const name = userDetail.name;
-  const email = userDetail.email; 
-  const [phone,setPhone] = useState('');
+  const name = userDetail?.name;
+  const email = userDetail?.email; 
+  const [phone,setPhone] = useState(userDetail?.phone || '');
   const [address,setAddress] = useState('');
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('cod');
   const [itemOrder,setItemOrder] = useState();
@@ -121,7 +121,7 @@ useEffect(() => {
           </div>
           <div className="form-group">
             <label htmlFor="address">{t("label-address")}</label>
-            <input required name="address" type="text" value={address}  onChange={e => setAddress(e.target.value)}/>
+            <input placeholder='Enter your address' required name="address" type="text" value={address}  onChange={e => setAddress(e.target.value)}/>
           </div>
           <div className="form-group">
             <label htmlFor="payment-method">{t("label-payment-method")}</label>
