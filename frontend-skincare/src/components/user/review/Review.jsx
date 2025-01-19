@@ -1,7 +1,6 @@
 import StarRatings from "react-star-ratings"
 import { GlobalState } from "../../../GlobalState";
-import { useParams, useHistory } from 'react-router-dom';
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Loading from "../../utils/Loading/Loading";
 import { useTranslation } from 'react-i18next';
 
@@ -10,13 +9,11 @@ const Review = (product_id) => {
     const state = useContext(GlobalState);
     const [token] = state.token;
     const [pd] = state.productsAPI.products;
-    const param = useParams();
     const [loading, setLoading] = useState(false);
     const [images, setImages] = useState(false);
     const [score, setScore] = useState(0);
     const [productID, setProductID] = useState('');
     const [content, setContent] = useState('');
-    const history = useHistory();
     const idProduct = product_id.productID;
     const { t } = useTranslation();
 

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 import Login from '../login-register/Login';
 import TopHeader from '../utils/top-header/TopHeader';
 import Header from '../utils/header/Header';
@@ -36,33 +36,31 @@ const Page = () => {
       setIsLoading(false);
     }, 500); 
   }, []);
-  
+
   if (isLoading) {
     return <Loading/>
   }
+
   return (
-    <Router>
-      <Switch>
-        <Route path="/admin*" component={isAdmin ? Admin : Notfound} />
-        <Route path="/login" component={Login} />
-        <Route path="/sign-in" component={LoginForm} />
-        <Route path="/register" component={Register} />
-        <Route path="/detail/:id" component={ProductDetail} />
-        <Route path="/order-summary" component={OrderSummary} />
-        <Route path="/shipping-detail" component={ShippingDetail} />
-        <Route path="/cart" component={Cart} />
-        <Route path="/checkout-confirm" component={CheckoutComfirm} />
-        <Route path="/payment-method" component={PaymentMethod} />
-        <Route path="/product-list/:id" component={ProductList} />
-        <Route path="/order-detail/:id" component={OrderDetail} />
-        <Route path="/profile" component={UserProfile} />
-        {/* <Route path="/order-detail" component={OrderDetail} /> */}
-        <Route path="/myInfo" component={MyInfo} />
-        <Route path="/review-product/:id" component={Review} />
-        <Route path="/" component={Banner} />
-      </Switch>
-    </Router>
+    <Routes>
+      <Route path="/admin*" element={isAdmin ? <Admin /> : <Notfound />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/sign-in" element={<LoginForm />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/detail/:id" element={<ProductDetail />} />
+      <Route path="/order-summary" element={<OrderSummary />} />
+      <Route path="/shipping-detail" element={<ShippingDetail />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/checkout-confirm" element={<CheckoutComfirm />} />
+      <Route path="/payment-method" element={<PaymentMethod />} />
+      <Route path="/product-list/:id" element={<ProductList />} />
+      <Route path="/order-detail/:id" element={<OrderDetail />} />
+      <Route path="/profile" element={<UserProfile />} />
+      <Route path="/myInfo" element={<MyInfo />} />
+      <Route path="/review-product/:id" element={<Review />} />
+      <Route path="/" element={<Banner />} />
+    </Routes>
   );
 }
 
-export default Page
+export default Page;

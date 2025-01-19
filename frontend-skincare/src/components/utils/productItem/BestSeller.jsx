@@ -14,7 +14,7 @@ import { Navigation } from "swiper";
 import "../scss/recommend.scss";
 import { useEffect } from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from "react-router-dom";
 
 const BestSeller = () => {
   const [data,setData] = useState();

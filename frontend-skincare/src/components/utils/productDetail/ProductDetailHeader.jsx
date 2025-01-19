@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { Link } from 'react-router-dom';
 import StarRatings from 'react-star-ratings';
 import { GlobalState } from '../../../GlobalState';
 import axios from 'axios';
