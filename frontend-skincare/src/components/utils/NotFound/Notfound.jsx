@@ -17,7 +17,7 @@ const Notfound = () => {
           <p>Please check with the site admin if you believe this is a mistake.</p> :
           <>
             <p>Please Login to site .</p>
-            <Link to="/sign-in"><button className='button btn btn--animated btn--primary--blue btn--border--blue'>Go to Login</button></Link>
+            <Link className='button btn btn--animated btn--primary--blue btn--border--blue' to="/sign-in">Go to Login</Link>
           </>
         }
       </div>

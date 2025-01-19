@@ -6,10 +6,10 @@ function ProfileOption() {
   return (
     <div className="profile-option">
       <div className="profile-option-item">
-        <Link target='_parent' to="/myInfo">{t("label-user-info")}</Link>
+        <Link to="/myInfo">{t("label-user-info")}</Link>
       </div>
       <div className="profile-option-item">
-        <Link target='_parent' to="/profile">{t("label-my-orders")}</Link>
+        <Link to="/profile">{t("label-my-orders")}</Link>
       </div>
     </div>
   );

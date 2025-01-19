@@ -40,9 +40,9 @@ const OrderHeader = (order) => {
 
   return (
     <>
-      <div className="products-header">
-        <div className="product-cell image">
-          Order of User : {orderData.name}
+      <div className="flex bg-gray-200">
+        <div className="product-cell image font-bold">
+          Order of User : <p className="bg-gray-500 p-1 rounded">{orderData.name}</p>
         </div>
         <div className="product-cell image">
           {formattedDateTime} {minutesDifference}

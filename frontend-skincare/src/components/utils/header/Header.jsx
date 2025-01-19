@@ -49,13 +49,13 @@ const Header = () => {
           <>
             <div className="header-right">
             {/* <LanguageSwitcher/> */}
-                <Link target="_parent" to='/myInfo' className="user-sign">
+                <Link to='/myInfo' className="user-sign">
                     <div className="user-icon">
                       <img src={userDetail[0].avatar} alt={userDetail[0].avatar} width={40} height={40} />
                     </div>
                 </Link>
                 <div className="header-cart">
-                    <Link target="_parent" to="/order-summary">
+                    <Link to="/order-summary">
                         <AiOutlineShoppingCart />
                         <span className="header-cart-count">{cartCount}</span>
                     </Link>
@@ -74,7 +74,7 @@ const Header = () => {
         <header>
           <div className="header-container">
             <div className="header__logo header-item">
-              <Link target="_parent" to="/">
+              <Link to="/">
                 <label className="text-2xl font-bold uppercase">
                   {t('labe-intro')}
                 </label>
@@ -95,7 +95,7 @@ const Header = () => {
                 {searchResults.length > 0 && (
                   <div className="search-results">
                     {searchResults.map((product) => (
-                      <Link target="_parent" key={product._id} to={`/detail/${product._id}`}>
+                      <Link key={product._id} to={`/detail/${product._id}`}>
                         <div className="result-item">
                           <p>{t(`${product.title}`)}</p>
                           <img src={product.images.url} alt={"image-product"} width={30}/>
@@ -111,7 +111,7 @@ const Header = () => {
               LogoutRouter()
             ) : (
               <div className="header-right header-item">
-                <Link target="_parent" to="/sign-in" className="user-sign">
+                <Link to="/sign-in" className="user-sign">
                   <div className="header-right-user">
                     <AiOutlineUser className="user-icon"/>
                     <div className="header-right-user_detail">
@@ -121,7 +121,7 @@ const Header = () => {
                   </div>
                 </Link>
                 <div className="header-cart">
-                  <Link target="_parent" to="/order-summary">
+                  <Link to="/order-summary">
                     <AiOutlineShoppingCart />
                     <span className="header-cart-count">0</span>
                   </Link>

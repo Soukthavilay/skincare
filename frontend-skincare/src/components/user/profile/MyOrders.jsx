@@ -70,7 +70,7 @@ function MyOrders(order) {
             </div>
             <div className="order-product-info">
               <h3 className="product-name">
-                <Link target='_parent' to={`/order-detail/${myOrder._id}`}>
+                <Link to={`/order-detail/${myOrder._id}`}>
                   {orderItem.title}
                 </Link>
               </h3>

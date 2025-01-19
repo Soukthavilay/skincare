@@ -14,7 +14,7 @@ function CheckoutConfirm() {
 
       <h3>{t("label-order-thank-you")}</h3>
 
-      <Link to='/' target='_parent'>
+      <Link to='/'>
         <button className="btn btn--animated btn--primary--blue btn--border--blue">
         {t("label-continues-product")}
         </button>

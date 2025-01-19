@@ -127,17 +127,17 @@ function OrderSummary() {
 
       <div className="checkout-buttons">
         <button className="btn btn--animated btn--primary--blue btn--border--blue">
-          <Link target="_parent" to='/'>{t("label-continues-product")}</Link>
+          <Link to='/'>{t("label-continues-product")}</Link>
         </button>
         <button className="btn btn--animated btn--primary--white btn--border--blue">
-          <Link target="_parent" to="/shipping-detail">{t("label-continues")}</Link>
+          <Link to="/shipping-detail">{t("label-continues")}</Link>
         </button>
       </div>
       </> : <>
         <div className="cart-no-have">
           <h2 className='order-summary-title'>{t("label-not-have-pd")}</h2>
           <button className="btn btn--animated btn--primary--white btn--border--blue">
-            <Link target="_parent" to="/">{t("label-continues-product")}</Link>
+            <Link to="/">{t("label-continues-product")}</Link>
           </button>
         </div>
       </>}

@@ -10,14 +10,6 @@ const TopHeader = () => {
             <i className='fa fa-envelope'></i>
             <label> Skincare@ui-lib.com</label>
             </div>
-            {/* <div className='right row RText'>
-            <label>Theme FAQ`s</label>
-            <label>Need Help?</label>
-            <span>🏳️</span>
-            <label>EN</label>
-            <span>🏳️</span>
-            <label>USD</label>
-            </div> */}
         </div>
         </section>
     )

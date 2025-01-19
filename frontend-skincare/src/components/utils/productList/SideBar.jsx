@@ -28,7 +28,7 @@ function SideBar() {
         <ul className="sidebar-item-list">
           {categories?.map((category)=>{
             return (
-              <Link target='_parent' key={category._id} to={`/product-list/${category._id}`}><li >{category.name}</li></Link>
+              <Link key={category._id} to={`/product-list/${category._id}`}><li >{category.name}</li></Link>
             )
           })}
         </ul>
@@ -38,7 +38,7 @@ function SideBar() {
         <ul className="sidebar-item-list">
         {bands?.map((band)=>{
             return (
-              <Link target='_parent' key={band._id} to={`/product-list/${band._id}`}><li >{band.name}</li></Link>
+              <Link key={band._id} to={`/product-list/${band._id}`}><li >{band.name}</li></Link>
             )
           })}
         </ul>

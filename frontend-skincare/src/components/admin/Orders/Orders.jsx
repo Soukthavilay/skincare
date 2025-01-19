@@ -152,7 +152,7 @@ const Orders = () => {
               <div className="product-cell category">Category</div>
               <div className="product-cell status-cell">Status</div>
               <div className="product-cell sales">Quantity</div>
-              <div className="product-cell stock">Band</div>
+              <div className="product-cell stock">Payment</div>
               <div className="product-cell price">Price</div>
             </div>
             {sortedOrders.map((orderItem) => {

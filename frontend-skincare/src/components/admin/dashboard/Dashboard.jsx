@@ -13,6 +13,7 @@ import EditProduct from '../createProducts/EditProduct';
 import Home from '../AdminHome/Home';
 import OrderDetail from '../Report/OrderDetail';
 import Users from '../users/Users';
+import UserDetail from "../users/UserDetail";
 
 const Dashboard = () => {
   const state = useContext(GlobalState);
@@ -21,14 +22,15 @@ const Dashboard = () => {
 
   return (
     <Routes>
-      <Route path="/admin/createProduct" element={isAdmin ? <Products /> : <Notfound />} />
-      <Route path="/admin/createCategories" element={isAdmin ? <Categories /> : <Notfound />} />
-      <Route path="/admin/orderList" element={isAdmin ? <Orders /> : <Notfound />} />
-      <Route path="/admin/Report" element={isAdmin ? <Report /> : <Notfound />} />
-      <Route path="/admin/edit_product/:id" element={isAdmin ? <EditProduct /> : <Notfound />} />
-      <Route path="/admin/statistical" element={<Home />} />
-      <Route path="/admin/orderDetail/:id" element={<OrderDetail />} />
-      <Route path="/admin/allUser" element={<Users />} />
+      <Route path="/createProduct" element={isAdmin ? <Products /> : <Notfound />} />
+      <Route path="/createCategories" element={isAdmin ? <Categories /> : <Notfound />} />
+      <Route path="/orderList" element={isAdmin ? <Orders /> : <Notfound />} />
+      <Route path="/Report" element={isAdmin ? <Report /> : <Notfound />} />
+      <Route path="/edit_product/:id" element={isAdmin ? <EditProduct /> : <Notfound />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/orderDetail/:id" element={<OrderDetail />} />
+      <Route path="/userDetail/:id" element={<UserDetail />} />
+      <Route path="/allUser" element={<Users />} />
     </Routes>
   );
 }

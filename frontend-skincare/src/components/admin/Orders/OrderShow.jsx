@@ -19,14 +19,13 @@ const OrderShow = (orders) => {
       }
     });
   }, [categories, order]);
+
   return (
     <>
       <OrderHeader key={order._id} order={order} />
       
-      {order.listOrderItems.map((item) => (
-        <Link key={item._id} to={{
-          pathname: `/admin/orderDetail/${order._id}`,
-          state: { order }}}>
+      {order?.listOrderItems.map((item) => (
+        <Link key={item._id} to={`/admin/orderDetail/${order._id}`} state={ order }>
         <div className="products-row">
           <div className="product-cell image">
             <img src={item.images.url} alt={item.images.url} />
@@ -47,7 +46,7 @@ const OrderShow = (orders) => {
           </div>
           <div className="product-cell stock">
             <span className="cell-label">Stock:</span>
-            {item.band}
+            {order.paymentMethod}
           </div>
           <div className="product-cell price">
             <span className="cell-label">Price:</span>

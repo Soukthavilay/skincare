@@ -68,7 +68,7 @@ const ProductRow = ( productShow ) => {
 
   return (
     <>
-      <Link target='_parent' to={`/admin/edit_product/${product._id}`}>
+      <Link to={`/admin/edit_product/${product._id}`}>
         <div className="products-row">
           <button className="cell-more-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-more-vertical">
@@ -84,10 +84,10 @@ const ProductRow = ( productShow ) => {
           <div className="product-cell category"><span className="cell-label">Category:</span>{newNameCate ? newNameCate : product.category}</div>
           <div className="product-cell status-cell">
             <span className="cell-label">Status:</span>
-            <span className="status active">Active</span>
+            <span className={`status ${product?.colors[0]?.sizes[0]?.quantity > 0 ? "active" : "canceled"}`}>{product?.colors[0]?.sizes[0]?.quantity > 0 ? "In Stock" : "Out of Stock"}</span>
           </div>
           <div className="product-cell sales"><span className="cell-label">Sales:</span>{product.sold}</div>
-          <div className="product-cell stock"><span className="cell-label">Stock:</span>{product.amount}</div>
+          <div className="product-cell stock"><span className="cell-label">Stock:</span>{product?.colors[0]?.sizes[0]?.quantity}</div>
           <div className="product-cell price"><span className="cell-label">Price:</span>{product.price}</div>
         </div>
       </Link>

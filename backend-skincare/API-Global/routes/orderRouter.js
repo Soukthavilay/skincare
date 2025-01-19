@@ -11,6 +11,7 @@ router.route('/orders')
     .delete(auth, orderCtrl.removeOrderItem)
     
 
+router.route('/order-by-customer/:id').get(auth, orderCtrl.getOrderByCustomerId)
 router.route('/createOrder').post(orderCtrl.CreateOrderKoh)
 router.route('/report/:year?/:month?').get(orderCtrl.monthlyReport)
 router.route('/statistics/allMonth').get(orderCtrl.monthlyStatistics)

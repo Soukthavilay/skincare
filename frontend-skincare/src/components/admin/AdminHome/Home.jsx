@@ -125,7 +125,7 @@ const Home = () => {
             <h2>Top Product</h2>
             {topProduct?.filter(top => top.sold > 0).map(top => (
               <div key={top._id} className="list-product-item">
-                <Link target='_parent' to={`/detail/${top._id}`}><div className="product-item-img">
+                <Link to={`/detail/${top._id}`}><div className="product-item-img">
                   <img src={top.images.url} alt="image-product" />
                 </div>
                 <div className="product-item-content">

@@ -8,9 +8,7 @@ const OrderCancel = (order) => {
     <>
         <OrderHeader key={orderItem._id} order={orderItem} />
         {orderItem.listOrderItems.map((item) => (
-            <Link key={item._id} to={{
-              pathname: `/admin/orderDetail/${orderItem._id}`,
-              state: { orderItem }}}>
+            <Link key={item._id} to={`/admin/orderDetail/${orderItem._id}`} state={orderItem }>
             <div className="products-row">
               <div className="product-cell image">
               <img src={item.images.url} alt={item.images.url} />

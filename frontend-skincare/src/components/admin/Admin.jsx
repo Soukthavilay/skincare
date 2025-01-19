@@ -3,8 +3,6 @@ import Sidebar from "./dashboard/sidebar/Sidebar";
 
 import './scss/dashboard.scss'
 
-
-
 const Admin = () => {
   return (
     <>

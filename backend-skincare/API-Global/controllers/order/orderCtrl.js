@@ -550,6 +550,18 @@ const orderCtrl = {
             catch (err) { }
         });
     },
+
+    getOrderByCustomerId: function (req, res) {
+        const userID = req.params.id;
+        Orders.find({ user_id: userID }, (err, doc) => {
+            if (err) {
+                res.send({ message: "Something went wrong" })
+            }
+            else {
+                res.send(doc);
+            }
+        })
+    },
     updateOrderDetail: async (req, res) => {
         const { phone, name, address, order_id } = req.body;
         if (!phone || !name || !address || !order_id) {

@@ -126,7 +126,7 @@ function ProductList() {
                     return (
                       <div style={{height: "fit-content"}} className="product-item" key={item._id}>
                         <div className="product-item-image">
-                          <Link target='_parent' to={`/detail/${item._id}`}>
+                          <Link to={`/detail/${item._id}`}>
                             <img src={item.images.url} alt={"product-image"} />
                           </Link>
                           {item.discountPercentage && item.discountExpiration ? 
@@ -138,7 +138,7 @@ function ProductList() {
                         </div>
                         <div className="product-item-detail">
                           <h3 className="product-name">
-                            <Link target='_parent' to={`/detail/${item._id}`}>{t(`${item.title}`)}</Link>
+                            <Link to={`/detail/${item._id}`}>{t(`${item.title}`)}</Link>
                           </h3>
                           <div className="product-detail">
                             <div className="product-detail-meta">
@@ -173,7 +173,6 @@ function ProductList() {
                             </div>
                             <span>{t("label-sold")} : {item.sold}</span>
                             <Link
-                              target="_parent"
                               to={`/detail/${item._id}`}
                               className="btn btn--animated btn--primary--white btn--border--blue"
                             >

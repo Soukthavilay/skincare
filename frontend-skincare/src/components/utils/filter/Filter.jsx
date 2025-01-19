@@ -43,7 +43,7 @@ const Filter = () => {
                 <ul className="option-menu">
                   {categories.map((category) => (
                     <li className="option" key={category._id}>
-                      <Link target="_parent" to={`/product-list/${category._id}`}>
+                      <Link to={`/product-list/${category._id}`}>
                         {category.name}
                       </Link>
                     </li>
@@ -69,7 +69,7 @@ const Filter = () => {
                 <ul className="option-menu">
                   {bands.map((band) => (
                     <li className="option" key={band._id}>
-                      <Link target="_parent" to={`/product-list/${band._id}`}>
+                      <Link to={`/product-list/${band._id}`}>
                         {band.name}
                       </Link>
                     </li>
@@ -81,27 +81,27 @@ const Filter = () => {
           <div className="menu-choice">
             <ul className="option-menu">
               <li className="option">
-                <Link target="_parent" to={`/product-list/${categoryIDs[4]}`}>
+                <Link to={`/product-list/${categoryIDs[4]}`}>
                   Computers
                 </Link>
               </li>
               <li className="option">
-                <Link target="_parent" to={`/product-list/${categoryIDs[0]}`}>
+                <Link to={`/product-list/${categoryIDs[0]}`}>
                   Phones
                 </Link>
               </li>
               <li className="option">
-                <Link target="_parent" to={`/product-list/${categoryIDs[1]}`}>
+                <Link to={`/product-list/${categoryIDs[1]}`}>
                   Gaming
                 </Link>
               </li>
               <li className="option">
-                <Link target="_parent" to={`/product-list/${categoryIDs[2]}`}>
+                <Link to={`/product-list/${categoryIDs[2]}`}>
                   Devices
                 </Link>
               </li>
               <li className="option">
-                <Link target="_parent" to={`/product-list/${categoryIDs[3]}`}>
+                <Link to={`/product-list/${categoryIDs[3]}`}>
                   Hot Deals
                 </Link>
               </li>

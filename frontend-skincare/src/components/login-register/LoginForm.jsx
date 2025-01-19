@@ -48,7 +48,7 @@ function LoginForm() {
       if (response.data.user.role === 0) {
         window.location.href = "/";
       } else {
-        window.location.href = "admin/statistical";
+        window.location.href = "/admin";
       }
     } catch (error) {
       toast.error(error.response.data.msg); // Display error message in ToastContainer
@@ -84,7 +84,7 @@ function LoginForm() {
       setRegisterSuccess(true);
 
       if (response.data.newUser.role === 1) {
-        window.location.href = "/admin/statistical";
+        window.location.href = "/admin";
       } else {
         window.location.href = "/";
       }

@@ -31,6 +31,7 @@ const Users = () => {
       getAllUsers();
     }
   }, [token, isAdmin]);
+  console.log(data);
 
   const handleStatusChange = (e) => {
     setSelectedStatus(e.target.value);
@@ -45,20 +46,20 @@ const Users = () => {
   };
 
   const filteredOrders = selectedStatus
-    ? data.filter((item) => item.name === selectedStatus)
+    ? data.filter((item) => item?.user.name === selectedStatus)
     : data;
 
   const sortedOrders = filteredOrders.sort((a, b) => {
     if (sortType === "newest") {
-      return new Date(b.createdAt) - new Date(a.createdAt);
+      return new Date(b.user.createdAt) - new Date(a.user.createdAt);
     } else if (sortType === "oldest") {
-      return new Date(a.createdAt) - new Date(b.createdAt);
+      return new Date(a.user.createdAt) - new Date(b.user.createdAt);
     }
     return 0;
   });
 
   const filteredSearch = sortedOrders.filter((order) =>
-    order.name.toLowerCase().includes(searchTerm.toLowerCase())
+    order.user.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -93,19 +94,23 @@ const Users = () => {
                   </svg>
                 </button>
               </div>
-              <div className="product-cell">Name</div>
-              <div className="product-cell">Phone</div>
-              <div className="product-cell">Email</div>
+              <div className="product-cell truncate w-fit">Name</div>
+              <div className="product-cell truncate w-fit">Phone</div>
+              <div className="product-cell truncate w-fit">Role</div>
+              <div className="product-cell truncate w-fit">Email</div>
+              <div className="product-cell truncate w-fit">Order Count</div>
             </div>
             {filteredSearch.map((user) => (
-              <div className="products-row" key={user._id}>
+              <Link to={`/admin/userDetail/${user.user._id}`} className="products-row" key={user.user._id}>
                 <div className="product-cell image">
-                  <img src={user.avatar} alt="avatar" />
+                  <img src={user.user.avatar} alt="avatar" />
                 </div>
-                <div className="product-cell">{user.name}</div>
-                <div className="product-cell">{user.phone}</div>
-                <div className="product-cell">{user.email}</div>
-              </div>
+                <div className="product-cell truncate w-fit">{user.user.name}</div>
+                <div className="product-cell truncate w-fit">{user.user.phone}</div>
+                <div className="product-cell truncate w-fit">{user.user.role === 1 ? "Admin" : "Customer"}</div>
+                <div className="product-cell truncate w-fit">{user.user.email}</div>
+                <div className="product-cell truncate w-fit">{user.orderCount}</div>
+              </Link>
             ))}
           </div>
         </div>

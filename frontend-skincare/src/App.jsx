@@ -1,4 +1,4 @@
-import User from './components/user/Page';
+import Pages from './components/user/Page';
 import { DataProvider } from './GlobalState';
 import TopHeader from './components/utils/top-header/TopHeader';
 import Header from './components/utils/header/Header';
@@ -14,7 +14,7 @@ const App = () => {
             <Header/>
           </div>
           <div className="page-content">
-            <User/>
+            <Pages/>
           </div>
           <Footer/>
       </LanguageProvider>

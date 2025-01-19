@@ -113,7 +113,7 @@ const RelatedItem = (categories) => {
                   <SwiperSlide key={_id}>
                     <div className="product-item">
                       <div className="product-item-image">
-                        <Link target='_parent' to={`/detail/${_id}`}>
+                        <Link to={`/detail/${_id}`}>
                           <img src={images.url} alt={images.url} />
                         </Link>
                         {discountPercentage && discountExpiration ? 
@@ -126,7 +126,7 @@ const RelatedItem = (categories) => {
                       </div>
                       <div className="product-item-detail">
                         <h3 className="product-name">
-                          <Link target='_parent' to={`/detail/${_id}`}>{t(`${title}`)}</Link>
+                          <Link to={`/detail/${_id}`}>{t(`${title}`)}</Link>
                         </h3>
                         <div className="product-detail">
                           <div className="product-detail-meta">
@@ -161,7 +161,6 @@ const RelatedItem = (categories) => {
                           </div>
                           <span>{t("label-sold")} : {sold}</span>
                           <Link
-                            target="_parent"
                             to={`/detail/${_id}`}
                             className="btn btn--animated btn--primary--white btn--border--blue"
                           >

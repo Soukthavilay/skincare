@@ -9,7 +9,7 @@ const CategoryItem = () => {
     <>
       <div className="categories-item">
         <div className="banners-double">
-          <Link target='_parent' to={`/product-list/65ae67f88b38bd5b6c4f22e2`} className="banner_fam" title="Áo Polo">
+          <Link to={`/product-list/65ae67f88b38bd5b6c4f22e2`} className="banner_fam" title="Áo Polo">
             <div className="view">
               <picture>
                 <source media="(min-width: 721px)" srcSet="https://www.sephora.com/contentimages/2025-jan-makeup-mbc-site-home-page-RWD-hero-banner-us-release-image-only.jpg" />
@@ -22,7 +22,7 @@ const CategoryItem = () => {
               </div>
             </div>
           </Link>
-          <Link target='_parent' to={`/product-list/65ae67f88b38bd5b6c4f22e2`} className="banner_fam" title="Áo Polo">
+          <Link to={`/product-list/65ae67f88b38bd5b6c4f22e2`} className="banner_fam" title="Áo Polo">
             <div className="view">
               <picture>
                 <source media="(min-width: 721px)" srcSet="https://www.sephora.com/contentimages/homepage/050124/2025-jan-skin-story-site-home-page-hero-banner-image-only-us-2833-handoff-2000x2000.jpeg?imwidth=545" />
@@ -35,7 +35,7 @@ const CategoryItem = () => {
               </div>
             </div>
           </Link>
-          <Link target='_parent' to={`/product-list/65ae67ef8b38bd5b6c4f22de`} className="banner_fam" title="Devices">
+          <Link to={`/product-list/65ae67ef8b38bd5b6c4f22de`} className="banner_fam" title="Devices">
             <div className="view">
               <picture>
                 <source media="(min-width: 721px)" srcSet="https://www.sephora.com/contentimages/2025-1-4-dae-desert-detox-shampoo-site-desktop-home-page-rwd-hero-banner-1200x800-en-us-can.jpg?imwidth=545" />
@@ -50,7 +50,7 @@ const CategoryItem = () => {
           </Link>
         </div>
         <div className="banners-triple">
-        <Link target='_parent' to={`/product-list/65ae680f8b38bd5b6c4f22e6`} className="banner_fam" title="Computers">
+        <Link to={`/product-list/65ae680f8b38bd5b6c4f22e6`} className="banner_fam" title="Computers">
             <div className="view">
               <picture>
                 <source media="(min-width: 721px)" srcSet="https://www.sephora.com/contentimages/2025-01-03-slotting-value-size-standard-site-rwd-home-page-marketing-banner-HERRERA-US-handoff_01.jpg?imwidth=400" />
@@ -63,7 +63,7 @@ const CategoryItem = () => {
               </div>
             </div>
           </Link>
-          <Link target='_parent' to={`/product-list/65ae681a8b38bd5b6c4f22ea`} className="banner_fam" title="Computers">
+          <Link to={`/product-list/65ae681a8b38bd5b6c4f22ea`} className="banner_fam" title="Computers">
             <div className="view">
               <picture>
                 <source media="(min-width: 721px)" srcSet="https://www.sephora.com/contentimages/2025-1-12-burberry-her-intense-eau-de-parfum-site-desktop-home-page-rwd-marketing-banner-1200x800-en-us-can.jpg?imwidth=400" />
@@ -76,7 +76,7 @@ const CategoryItem = () => {
               </div>
             </div>
           </Link>
-          <Link target='_parent' to={`/product-list/65ae6b104b4dc368f0898b12`} className="banner_fam" title="Computers">
+          <Link to={`/product-list/65ae6b104b4dc368f0898b12`} className="banner_fam" title="Computers">
             <div className="view">
               <picture>
                 <source media="(min-width: 721px)" srcSet="https://www.sephora.com/contentimages/2024-12-11-rare-beauty-by-selena-gomez-find-comfort-fragrance-mist-and-body-cream-site-app-home-page-rwd-marketing-banner-app-preview-800x534-en-us-can.jpg?imwidth=400" />

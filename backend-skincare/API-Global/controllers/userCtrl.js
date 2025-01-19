@@ -1,4 +1,5 @@
 const Users = require('../models/userModel');
+const Orders = require('../models/order/orderModel');
 const Payments = require('../models/paymentModel');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
@@ -129,11 +130,21 @@ const userCtrl = {
     try {
       try {
         const users = await Users.find();
-        res.json({
-            status: 'success',
-            result: users.length,
-            users: users
-        })
+        const userWithOrderCount = [];
+        // get order length of users
+        for (const user of users) {
+          const orderCount = await Orders.countDocuments({ user_id: user._id });
+          
+          userWithOrderCount.push({
+              user: user,
+              orderCount: orderCount
+          });
+      }
+      res.json({
+          status: 'success',
+          result: users.length,
+          users: userWithOrderCount
+      });
 
     } catch (err) {
         return res.status(500).json({ msg: err.message })

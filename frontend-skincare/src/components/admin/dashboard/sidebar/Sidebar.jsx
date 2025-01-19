@@ -31,37 +31,37 @@ const Sidebar = () => {
               </Link>
             </li>
             <li className="sidebar-list-item">
-              <Link to="/admin/allUser" target="_parent">
+              <Link to="/admin/allUser">
                 <AiOutlineUser />
                 <span>Users</span>
               </Link>
             </li>
             <li className="sidebar-list-item">
-              <Link to="/admin/createProduct" target="_parent">
+              <Link to="/admin/createProduct">
                 <BiPackage />
                 <span>Products</span>
               </Link>
             </li>
             <li className="sidebar-list-item">
-              <Link to="/admin/createCategories" target="_parent">
+              <Link to="/admin/createCategories">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
                 <span>Categories</span>
               </Link>
             </li>
             <li className="sidebar-list-item">
-              <Link to="/admin/orderList" target="_parent">
+              <Link to="/admin/orderList">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
                 <span>Orders</span>
               </Link>
             </li>
             {/* <li className="sidebar-list-item">
-                <Link to="/admin/cancel-request" target="_parent">
+                <Link to="/admin/cancel-request">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-shopping-bag"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
                 <span>Order Cancel Request</span>
                 </Link>
             </li> */}
             <li className="sidebar-list-item">
-              <Link to="/admin/statistical" target="_parent">
+              <Link to="/admin">
                 <LuLayoutDashboard />
                 <span>Dashboard</span>
               </Link>

@@ -119,7 +119,7 @@ const BestSeller = () => {
                       </div>
                       <div className="product-item-detail">
                         <h3 className="product-name">
-                          <Link target='_parent' to={`/detail/${_id}`}>
+                          <Link to={`/detail/${_id}`}>
                             <span>{t(`${title}`)}</span>
                           </Link>
                         </h3>
@@ -143,7 +143,7 @@ const BestSeller = () => {
                             </div>
                           </div>
                           <span>sold : {sold}</span>
-                          <Link target="_parent" to={`/detail/${_id}`} className="btn btn--animated btn--primary--white btn--border--blue">
+                          <Link to={`/detail/${_id}`} className="btn btn--animated btn--primary--white btn--border--blue">
                             {t('label-buy-now')}
                           </Link>
                         </div>
