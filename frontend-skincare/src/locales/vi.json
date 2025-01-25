@@ -190,5 +190,9 @@
         "678204c2ec16eb49d8f3596a": "Treatment",
         "65ae6b354b4dc368f0898b1a": "Đồ Nỉ",
         "65ae6b404b4dc368f0898b1e": "Đồ Mặc Ngoài"
-    }
+    },
+    "label-enter-otp": "Hãy nhập otp đã gửi đến email của bạn",
+    "label-otp": "OTP",
+    "label-verify": "Xác minh",
+    "label-back-to-register": "Quay lại đăng ký"
 }

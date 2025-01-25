@@ -39,6 +39,8 @@ const userSchema = new mongoose.Schema({
     birthday: {
         type: Date,
     },
+    otp: {type: String},          // Temporary OTP field
+    otpExpires: {type: Date}, // Temporary OTP field
 
 }, {
     timestamps: true

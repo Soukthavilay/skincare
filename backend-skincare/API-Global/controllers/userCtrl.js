@@ -1,37 +1,91 @@
+require('dotenv').config()
 const Users = require('../models/userModel');
 const Orders = require('../models/order/orderModel');
 const Payments = require('../models/paymentModel');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const authMe = require('../middleware/authMe');
+const crypto = require('crypto');
+const nodemailer = require('nodemailer');
+
+const transporter = nodemailer.createTransport({
+  service: 'gmail',
+  auth: {
+    user: process.env.EMAIL,
+    pass: process.env.EMAIL_PASSWORD,
+  },
+});
 
 const userCtrl = {
   register: async (req, res) => {
     try {
       const { name, email, password, phone } = req.body;
 
-      const user = await Users.findOne({ email });
-
-      if (user)
+      const existingUser = await Users.findOne({ email });
+      if (existingUser)
         return res.status(400).json({ msg: 'The email already exists.' });
 
       if (password.length < 6)
         return res
           .status(400)
-          .json({ msg: 'Password is at least 6 characters long.' });
-      // Password Encryption
+          .json({ msg: 'Password must be at least 6 characters long.' });
+
+      // Hash password
       const passwordHash = await bcrypt.hash(password, 10);
+
+      // Generate OTP
+      const otp = crypto.randomInt(100000, 999999).toString();
+      const otpExpires = Date.now() + 10 * 60 * 1000; // 10 minutes expiry
+
+      // Save user with OTP
       const newUser = new Users({
         name,
         email,
         password: passwordHash,
         phone,
+        otp,
+        otpExpires,
       });
-      // Save mongodb
       await newUser.save();
-      // Then create jsonwebtoken to authentication
-      const accesstoken = createAccessToken({ id: newUser._id });
-      const refreshtoken = createRefreshToken({ id: newUser._id });
+
+      // Send OTP via email
+      const mailOptions = {
+        from: process.env.EMAIL,
+        to: email,
+        subject: 'Verify Your Email',
+        text: `Your OTP code is ${otp}. It will expire in 10 minutes.`,
+      };
+
+      await transporter.sendMail(mailOptions);
+
+      res.json({ msg: 'Please check your email to verify your account.' });
+    } catch (err) {
+      console.log(err.message);
+      res.status(500).json({ msg: err.message });
+    }
+  },
+
+  verifyEmail: async (req, res) => {
+    try {
+      const { email, otp } = req.body;
+
+      const user = await Users.findOne({ email });
+      if (!user) return res.status(400).json({ msg: 'User not found.' });
+
+      if (user.otp !== otp)
+        return res.status(400).json({ msg: 'Invalid OTP.' });
+
+      if (Date.now() > user.otpExpires)
+        return res.status(400).json({ msg: 'OTP has expired.' });
+
+      // OTP verified; clear otp fields and activate user
+      user.otp = null;
+      user.otpExpires = null;
+      await user.save();
+
+      const accesstoken = createAccessToken({ id: user._id });
+      const refreshtoken = createRefreshToken({ id: user._id });
+
       res.cookie('refreshtoken', refreshtoken, {
         httpOnly: true,
         path: '/user/refresh_token',
@@ -39,10 +93,11 @@ const userCtrl = {
         sameSite: 'none',
         secure: true,
       });
-      res.json({ accesstoken, newUser });
+
+      res.json({ msg: 'Email verified successfully.', accesstoken, user });
     } catch (err) {
       console.log(err.message);
-      return res.status(500).json({ msg: err.message });
+      res.status(500).json({ msg: 'Internal Server Error.' });
     }
   },
 

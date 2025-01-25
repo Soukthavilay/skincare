@@ -13,6 +13,7 @@ const dotenv = require('dotenv');
 const nodemailer = require("nodemailer");
 const Mailgen = require('mailgen');
 const Voucher = require('../../models/voucherModel')
+require('dotenv').config()
 
 const orderCtrl = {
     CreateOrderKoh: async (req, res) => {
@@ -81,8 +82,8 @@ const orderCtrl = {
                 const transporter = nodemailer.createTransport({
                     service: 'gmail',
                     auth: {
-                        user: 'koke1150199@gmail.com',
-                        pass: 'nanozlpbkistsqrp'
+                        user: process.env.EMAIL,
+                        pass: process.env.EMAIL_PASSWORD,
                     }
                 });
                 const currentTime = new Date().toLocaleString();
@@ -135,7 +136,7 @@ const orderCtrl = {
                         <tr>
                           <td colspan="2" style="padding:15px;">
                               ${listOrderItems.map(item => `
-                                  <p style="font-size:14px;margin:0;padding:10px;border:solid 1px #ddd;font-weight:bold;"><span style="display:block;font-size:13px;font-weight:normal;">${item.title}</span> USD. ${item.price} <b style="font-size:12px;font-weight:300;"> /${item.amount}</b></p>
+                                  <p style="font-size:14px;margin:0;padding:10px;border:solid 1px #ddd;font-weight:bold;"><span style="display:block;font-size:13px;font-weight:normal;">${item.title}</span> USD. ${item.price} <b style="font-size:12px;font-weight:300;"> /${item.quantity}</b></p>
                                   <img src=${item.images.url} alt="order image" width=200px/>
                               `)}
                           </td>
@@ -146,7 +147,7 @@ const orderCtrl = {
                           <td colspan="2" style="font-size:14px;padding:50px 15px 0 15px;">
                             <strong style="display:block;margin:0 0 10px 0;">Regards</strong> Lao Technology<br> Lao, Champasack, Pakse , 002132<br><br>
                             <b>Phone:</b> 0888946837<br>
-                            <b>Email:</b> Soukthavilay2000@gmail.com
+                            <b>Email:</b> koke1150199@gmail.com
                           </td>
                         </tr>
                       </tfooter>

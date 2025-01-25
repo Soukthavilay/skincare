@@ -6,6 +6,7 @@ const corsMiddleware = require('../middleware/corsMiddleware');
 
 
 router.post('/register', userCtrl.register)
+router.post('/verifyEmail', userCtrl.verifyEmail)
 
 router.post('/login', userCtrl.login)
 

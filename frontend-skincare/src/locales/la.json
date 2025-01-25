@@ -189,5 +189,9 @@
         "678204c2ec16eb49d8f3596a": "Underwear",
         "65ae6b354b4dc368f0898b1a": "Knitwear",
         "65ae6b404b4dc368f0898b1e": "Outerwear"
-    }
+    },
+    "label-enter-otp": "Enter the number sent to your email",
+    "label-otp": "OTP",
+    "label-verify": "Xác minh",
+    "label-back-to-register": "Quay lại đăng ký"
 }

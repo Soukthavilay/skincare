@@ -102,6 +102,7 @@ const Header = () => {
                         </div>
                       </Link>
                     ))}
+                    <span onClick={() => setSearchResults([])} className="rounded-full bg-red-500 absolute top-0 right-0 text-white w-5 h-5 flex items-center justify-center cursor-pointer">X</span>
                   </div>
                 )}
               <button onClick={handleSearch} className="search-btn"><AiOutlineSearch/></button>
